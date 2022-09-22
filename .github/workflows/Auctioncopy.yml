@@ -1,4 +1,4 @@
-name: Auction Current Bid 
+name: Auction_copy 
 on:
   schedule:
     - cron: '*/5 * * * *' 
