@@ -1,5 +1,8 @@
 name: Auction Current Bid 
-on:push
+on:
+   Schedule:
+   -crons: '*/5 * * * *' 
+
  
 jobs:
   Auction:
