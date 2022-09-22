@@ -1,7 +1,7 @@
 name: Auction Current Bid 
 on:
-   Schedule:
-   -crons: '*/5 * * * *' 
+  schedule:
+    - cron: '*/5 * * * *' 
 
  
 jobs:
