@@ -1,5 +1,5 @@
 
-name: 1stAuction
+name: 1stAuction 
 on:
   schedule:
     - cron: '*/5 * * * *'
