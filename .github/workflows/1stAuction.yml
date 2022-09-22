@@ -1,7 +1,8 @@
 
-name: Auction Current Bid 
-on: push 
-  
+name: AuctionRelay2
+on:
+  schedule:
+    - cron: '1/ * * * *'
 jobs:
   Auction:
     runs-on: ubuntu-latest
