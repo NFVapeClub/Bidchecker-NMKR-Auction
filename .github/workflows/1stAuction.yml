@@ -2,7 +2,7 @@
 name: Auction Current Bid 
 on: 
   schedule: 
-     - cron: '5 * * * *'
+     - cron: '*/5 * * * *'
 jobs:
   Auction:
     runs-on: ubuntu-latest
