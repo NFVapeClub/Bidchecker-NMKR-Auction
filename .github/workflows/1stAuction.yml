@@ -15,7 +15,7 @@ jobs:
         id: var
         run: |
           curl -H "project_id:  ${{ secrets.BLACKFROST }}" \
-          "https://cardano-mainnet.blockfrost.io/api/v0/addresses/addr1v9r0g0n3jqshfdl932t0ytq3mupgt0cjut6lz9hdfvqse8sthxl7x" | jq '.amount[0].quantity|=tonumber / 1000000' > test.txt 
+          "https://cardano-mainnet.blockfrost.io/api/v0/addresses/addr1v9r0g0n3jqshfdl932t0ytq3mupgt0cjut6lz9hdfvqse8sthxl7x" | jq '.amount[0].quantity|=tonumber' > test.txt 
           adabid=$(cat test.txt | jq '.amount[0].quantity') 
           echo "adabid=$adabid" >> $GITHUB_ENV
       - name: Export Variable
