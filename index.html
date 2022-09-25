@@ -10,7 +10,7 @@ const getData = function() {
   result.innerText = 'Loading....'
   fetch(url, {
     headers: {
-      project_id: 'mainnetcPkAK17AyBxUI6KtcjY7YEbXEDKyhu6X'
+      project_id:  ${{ secrets.BLACKFROST }}"
     }})
     .then(res => res.json())
     .then(data => {
