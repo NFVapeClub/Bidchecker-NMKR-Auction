@@ -1,7 +1,7 @@
 <button id="fetchdata">CheckBid</button>
 <div id="result"></div>
 <script>
-  const url = "https://cardano-mainnet.blockfrost.io/api/v0/addresses/addr1v9r0g0n3jqshfdl932t0ytq3mupgt0cjut6lz9hdfvqse8sthxl7x" 
+const url = "https://cardano-mainnet.blockfrost.io/api/v0/addresses/addr1v9r0g0n3jqshfdl932t0ytq3mupgt0cjut6lz9hdfvqse8sthxl7x" 
 const fetchDataBtn = document.querySelector('#fetchdata')
 const result = document.querySelector('#result')
 
@@ -10,7 +10,7 @@ const getData = function() {
   result.innerText = 'Loading....'
   fetch(url, {
     headers: {
-      project_id:  ${{ secrets.BLACKFROST }}"
+      project_id:  "${{ secrets.BLACKFROST }}"
     }})
     .then(res => res.json())
     .then(data => {
